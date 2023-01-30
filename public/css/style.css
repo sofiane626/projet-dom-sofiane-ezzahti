@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "noto";
+  src: url("../../public/fonts/NotoSans-Regular.ttf");
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10292,6 +10296,7 @@ readers do not read off random characters that represent icons */
 body {
   padding: 0;
   margin: 0;
+  font-family: "noto";
 }
 
 header {
@@ -10478,12 +10483,12 @@ header::before {
 }
 
 .header-div3-1 h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
 }
 
 .header-div3-1 p {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -10556,7 +10561,7 @@ header::before {
   width: 45%;
   margin: auto;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10632,6 +10637,22 @@ header::before {
   width: 30%;
   height: 75%;
   background-color: #191814;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2-box-card {
+  height: 100%;
+  width: 90%;
+}
+
+.section2-box-card h1 {
+  color: #cca35c;
+}
+
+.section2-box-card p {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
