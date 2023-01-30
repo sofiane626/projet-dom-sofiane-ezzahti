@@ -10294,4 +10294,53 @@ body {
   margin: 0;
 }
 
+header {
+  height: 95vh;
+  width: 100%;
+  background-image: url("../../../public/img/hero-bg.jpg");
+  filter: brightness(45%);
+  position: fixed;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-div1 {
+  height: 5%;
+  width: 100%;
+}
+
+.header-div2 {
+  height: 10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.709);
+}
+
+.header-div3 {
+  height: 85%;
+  width: 100%;
+}
+
+.box {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
