@@ -10370,4 +10370,14 @@ header::before {
   justify-content: center;
 }
 
+.header-div2-3 button {
+  background-color: transparent;
+  border: 1px solid #cca35c;
+  border-radius: 20px;
+  height: 35px;
+  width: 130px;
+  color: white;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
