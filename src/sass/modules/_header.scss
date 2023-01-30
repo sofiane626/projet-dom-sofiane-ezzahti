@@ -40,6 +40,21 @@ header::before{
     height: 85%;
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header-div3-1{
+    height: 30%;
+    width: 50%;
+}
+
+.header-div3-2 {
+    height: 30%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 .header-div1 i{
@@ -128,4 +143,53 @@ header::before{
 .header-div2-3 button:hover {
     background-color: #cca35c;
     color: white;
+}
+
+.header-div3-2 button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 50px;
+    background-color: #cca35c;
+    border: none;
+    cursor: pointer;
+}
+
+.header-div3-2 i {
+    color: white;
+}
+
+.header-div3-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.header-div3-btn button{
+    background-color: transparent;
+    border: 2px solid #cca35c;
+    border-radius: 20px;
+    height: 35px;
+    width: 130px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-div3-btn button:hover {
+    background-color: #cca35c;
+    color: white;
+}
+
+.header-div3-1 span{
+    color: #cca35c;
+}
+
+.header-div3-1 h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.header-div3-1 p{
+    font-size: 20px;
+    margin: 0;
 }
