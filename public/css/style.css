@@ -10523,12 +10523,19 @@ header::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  color: white;
 }
 
 .sectio1-gauche {
   height: 95%;
   width: 45%;
   margin: auto;
+  color: white;
+}
+
+.fa-regular {
+  color: #cca35c !important;
 }
 
 .sectio1-droite {
