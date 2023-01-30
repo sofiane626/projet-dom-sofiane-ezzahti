@@ -10820,12 +10820,14 @@ header::before {
 .section2-bar {
   display: flex;
   width: 20%;
+  gap: 10px;
 }
 
-.section2-bar hr {
-  height: 0.5px;
-  bottom: 0;
-  width: 30px;
+.section2-Bar {
+  height: 10px;
+  width: 100px;
+  border-bottom: 1px solid #cca35c;
+  margin-top: 16px;
 }
 
 .section2-bas {
@@ -10850,6 +10852,14 @@ header::before {
   background-color: #cca35c;
 }
 
+.section2-card:hover h1 {
+  color: white;
+}
+
+.section2-card:hover .section2-box-card {
+  transform: translateY(-8px);
+}
+
 .section2-box-card {
   height: 100%;
   width: 90%;
@@ -10866,6 +10876,12 @@ header::before {
 
 .section2-box-card p {
   font-size: 12px;
+}
+
+.section2-haut h3 {
+  margin: 0;
+  color: #cca35c;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
