@@ -17,7 +17,6 @@ header::before {
   background-image: url("../../../public/img/hero-bg.jpg");
   background-attachment: fixed;
   filter: brightness(45%);
-  position: fixed;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -301,6 +300,29 @@ header::before {
     background-color: #000;
   }
 
+  .header-test {
+    flex-direction: column;
+  }
+
+  .header-div3-1 {
+    margin: auto;
+    text-align: center;
+    height: 60%;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .header-div3-btn {
+    margin-left: 200px;
+  }
+
+  .header-div3-2 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .header-div2-1 {
     width: 50%;
   }
@@ -309,11 +331,15 @@ header::before {
     display: none;
   }
 
+  header::before {
+    background-size: cover !important;
+  }
+
   .navbar__links {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     width: 0;
     height: 100vh;
     position: absolute;
