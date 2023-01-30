@@ -1,195 +1,206 @@
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    height: 95vh;
-    width: 100%;
-    position: relative;
+  height: 95vh;
+  width: 100%;
+  position: relative;
 }
 
-header::before{
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-image: url("../../../public/img/hero-bg.jpg");
-    filter: brightness(45%);
-    position: fixed;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
+header::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../public/img/hero-bg.jpg");
+  filter: brightness(45%);
+  position: fixed;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
 }
 
-.header-div1{
-    height: 5%;
-    width: 100%;
-    position: relative;
+.header-div1 {
+  height: 5%;
+  width: 100%;
+  position: relative;
 }
 
 .header-div2 {
-    height: 10%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.591);
-    color: white !important;
-    position: relative;
+  height: 10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.591);
+  color: white !important;
+  position: relative;
 }
 
 .header-div3 {
-    height: 85%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  height: 85%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.header-div3-1{
-    height: 30%;
-    width: 50%;
+.header-div3-1 {
+  height: 30%;
+  width: 50%;
 }
 
 .header-div3-2 {
-    height: 30%;
-    width: 45%;
-    display: flex;
-    justify-content: center;
+  height: 30%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
 }
 
-.header-div1 i{
-    color: #cca35c;
+.header-div1 i {
+  color: #cca35c;
 }
 
-.header-div1-1{
-    display: flex;
-    gap: 20px;
+.header-div1-1 {
+  display: flex;
+  gap: 20px;
 }
 
-.header-div1-2{
-    margin-right: 40px !important;
+.header-div1-2 {
+  margin-right: 40px !important;
 }
 
-.header-div1-2 a{
-    text-decoration: none;
-    color: white;
+.header-div1-2 a {
+  text-decoration: none;
+  color: white;
 }
 
-.header-div2-1 h2{
-    transition: all 0.3s;
+.header-div2-1 h2 {
+  transition: all 0.3s;
 }
 
-.header-div2-1 h2:hover{
-    color: #cca35c;
+.header-div2-1 h2:hover {
+  color: #cca35c;
 }
 
-.box{
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    position: relative;
+.box {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: relative;
 }
 
-.nav-bar{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    list-style: none;
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
 }
 
-.nav-bar a{
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s;
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
 }
 
 .nav-bar a:hover {
-    color: #cca35c;
+  color: #cca35c;
 }
 
-#home{
-    color: #cca35c;
+#home {
+  color: #cca35c;
 }
 
-.header-div2-1{
-    width: 20%;
+.header-div2-1 {
+  width: 20%;
 }
 
-.header-div2-2{
-    width: 50%;
+.header-div2-2 {
+  width: 50%;
 }
 
-.header-div2-3{
-    width: 20%;
-    display: flex;
-    justify-content: center;
+.header-div2-3 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
-.header-div2-3 button{
-    background-color: transparent;
-    border: 2px solid #cca35c;
-    border-radius: 20px;
-    height: 35px;
-    width: 130px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.header-div2-3 button:hover {
-    background-color: #cca35c;
-    color: white;
-}
-
-.header-div3-2 button{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    margin-top: 50px;
-    background-color: #cca35c;
-    border: none;
-    cursor: pointer;
+.header-div3-2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cca35c;
+  margin-right: 200px;
 }
 
 .header-div3-2 i {
-    color: white;
+  color: white;
 }
 
-.header-div3-btn{
-    display: flex;
-    gap: 20px;
+.header-div3-btn {
+  display: flex;
+  gap: 20px;
 }
 
-.header-div3-btn button{
-    background-color: transparent;
-    border: 2px solid #cca35c;
-    border-radius: 20px;
-    height: 35px;
-    width: 130px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s;
+.header-div3-btn button {
+  background-color: transparent;
+  border: 2px solid #cca35c;
+  border-radius: 20px;
+  height: 35px;
+  width: 130px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .header-div3-btn button:hover {
-    background-color: #cca35c;
-    color: white;
+  background-color: #cca35c;
+  color: white;
 }
 
-.header-div3-1 span{
-    color: #cca35c;
+.header-div3-1 span {
+  color: #cca35c;
 }
 
-.header-div3-1 h1{
-    font-size: 50px;
-    margin: 0;
+.header-div3-1 h1 {
+  font-size: 50px;
+  margin: 0;
 }
 
-.header-div3-1 p{
-    font-size: 20px;
-    margin: 0;
+.header-div3-1 p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.circle-pulse {
+  height: 70px;
+  width: 70px;
+  color: #cca35ccf;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #cca35c;
+  animation: pulse 1.3s infinite 2s linear;
+}
+@keyframes pulse {
+  0% {
+    height: 50px;
+    opacity: 100%;
+  }
+  95% {
+    height: 79px;
+    opacity: 100%;
+  }
+  100% {
+    height: 79px;
+    opacity: 0%;
+  }
 }
