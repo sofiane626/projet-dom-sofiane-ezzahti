@@ -10496,12 +10496,15 @@ header::before {
     opacity: 0%;
   }
 }
-main {
-  height: fit-content;
+#section1 {
+  height: 95vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main::before {
+#section1::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -10512,6 +10515,26 @@ main::before {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
+}
+
+.section1-box {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectio1-gauche {
+  height: 95%;
+  width: 45%;
+  margin: auto;
+}
+
+.sectio1-droite {
+  height: 95%;
+  width: 45%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
