@@ -10297,28 +10297,40 @@ body {
 header {
   height: 95vh;
   width: 100%;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  height: 100%;
+  width: 100%;
   background-image: url("../../../public/img/hero-bg.jpg");
   filter: brightness(45%);
   position: fixed;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100%;
+  position: absolute;
 }
 
 .header-div1 {
   height: 5%;
   width: 100%;
+  position: relative;
 }
 
 .header-div2 {
   height: 10%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.709);
+  background-color: rgba(0, 0, 0, 0.757);
+  color: white !important;
+  position: relative;
 }
 
 .header-div3 {
   height: 85%;
   width: 100%;
+  position: relative;
 }
 
 .box {
@@ -10329,18 +10341,33 @@ header {
   align-items: center;
   justify-content: space-between;
   color: white;
+  position: relative;
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: white;
+}
+
+.header-div2-1 {
+  width: 20%;
+}
+
+.header-div2-2 {
+  width: 50%;
+}
+
+.header-div2-3 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
