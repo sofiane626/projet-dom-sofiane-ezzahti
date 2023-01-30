@@ -44,11 +44,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
+}
+
+.section2-card:hover {
+  background-color: #cca35c;
 }
 
 .section2-box-card {
   height: 100%;
   width: 90%;
+  transition: all 0.6s;
+}
+
+.section2-box-card {
+  transform: translateY(10px);
 }
 
 .section2-box-card h1 {

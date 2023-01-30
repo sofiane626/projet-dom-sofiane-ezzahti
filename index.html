@@ -23,26 +23,45 @@
           </div>
         </div>
       </div>
-      <div class="header-div2">
+      <div class="header-div2 navbar">
         <div class="box">
           <div class="header-div2-1">
             <h2>MOLEN FOOD</h2>
           </div>
           <div class="header-div2-2">
             <nav>
-              <ul class="nav-bar">
-                <li><a id="home" href="">Home</a></li>
-                <li><a href="#section1">About</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Specials</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Chefs</a></li>
-                <li><a href="">Contact</a></li>
+              <ul class="nav-bar navbar__links">
+                <li class="navbar__link first">
+                  <a id="home" href="#home">Home</a>
+                </li>
+                <li class="navbar__link second">
+                  <a href="#section1">About</a>
+                </li>
+                <li class="navbar__link third"><a href="#section2">Menu</a></li>
+                <li class="navbar__link four">
+                  <a href="#section3">Specials</a>
+                </li>
+                <li class="navbar__link fifth">
+                  <a href="#section4">Events</a>
+                </li>
+                <li class="navbar__link six">
+                  <a href="#section5">Gallery</a>
+                </li>
+                <li class="navbar__link seven">
+                  <a href="#section6">Chefs</a>
+                </li>
+                <li class="navbar__link height">
+                  <a href="#section7">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
-          <div class="header-div2-3"><button>CONNECTION</button></div>
+          <div class="header-div2-3">
+            <button class="connexion">CONNEXION</button>
+            <button class="burger">
+              <span class="bar"></span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="header-div3">
@@ -57,8 +76,25 @@
             </div>
           </div>
           <div class="header-div3-2">
-            <div><i class="fa-solid fa-play"></i></div>
-            <div class=".circle-pulse"></div>
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/yyr5PnCPA58?start=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="btn-pulse" id="modalBtn">
+              <div class="pulse">
+                <a href=""><i class="fa-solid fa-play"></i></a>
+              </div>
+              <div class="circle-pulse"></div>
+            </div>
           </div>
         </div>
       </div>

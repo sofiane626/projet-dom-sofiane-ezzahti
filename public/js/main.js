@@ -30,3 +30,53 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 reveal();
+
+// Référence aux éléments HTML
+var modalBtn = document.getElementById("modalBtn");
+var modal = document.getElementById("myModal");
+var video = document.getElementById("video");
+var close = document.getElementsByClassName("close")[0];
+
+// Déclencheur pour l'ouverture du modal
+modalBtn.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+// Déclencheur pour la fermeture du modal
+close.addEventListener("click", function () {
+  modal.style.display = "none";
+  video.contentWindow.postMessage(
+    '{"event":"command","func":"pauseVideo","args":""}',
+    "*"
+  );
+  video.src = "";
+});
+
+// Déclencheur pour fermer le modal en cliquant en dehors de la vidéo
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    video.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+    video.src = "";
+  }
+});
+
+function toggleMenu() {
+  const navbar = document.querySelector(".navbar");
+  const burger = document.querySelector(".burger");
+
+  burger.addEventListener("click", (e) => {
+    navbar.classList.toggle("show-nav");
+  });
+  // bonus
+  const navbarLinks = document.querySelectorAll(".navbar a");
+  navbarLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      navbar.classList.toggle("show-nav");
+    });
+  });
+}
+toggleMenu();
