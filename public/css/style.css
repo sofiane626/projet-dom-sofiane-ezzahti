@@ -10322,7 +10322,7 @@ header::before {
 .header-div2 {
   height: 10%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.757);
+  background-color: rgba(0, 0, 0, 0.591);
   color: white !important;
   position: relative;
 }
@@ -10331,6 +10331,32 @@ header::before {
   height: 85%;
   width: 100%;
   position: relative;
+}
+
+.header-div1 i {
+  color: #cca35c;
+}
+
+.header-div1-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.header-div1-2 {
+  margin-right: 40px !important;
+}
+
+.header-div1-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-div2-1 h2 {
+  transition: all 0.3s;
+}
+
+.header-div2-1 h2:hover {
+  color: #cca35c;
 }
 
 .box {
@@ -10354,6 +10380,15 @@ header::before {
 .nav-bar a {
   text-decoration: none;
   color: white;
+  transition: all 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #cca35c;
+}
+
+#home {
+  color: #cca35c;
 }
 
 .header-div2-1 {
@@ -10372,12 +10407,18 @@ header::before {
 
 .header-div2-3 button {
   background-color: transparent;
-  border: 1px solid #cca35c;
+  border: 2px solid #cca35c;
   border-radius: 20px;
   height: 35px;
   width: 130px;
   color: white;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-div2-3 button:hover {
+  background-color: #cca35c;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
