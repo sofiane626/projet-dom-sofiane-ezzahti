@@ -11,8 +11,8 @@
   height: 100%;
   width: 100%;
   background-image: url("../../../public/img/about-bg.jpg");
+  background-attachment: fixed;
   filter: brightness(45%);
-  position: fixed;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -29,19 +29,28 @@
   color: white;
 }
 
-.sectio1-gauche {
+.section1-gauche {
   height: 95%;
   width: 45%;
   margin: auto;
   color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fa-regular {
   color: #cca35c !important;
 }
 
-.sectio1-droite {
-  height: 95%;
-  width: 45%;
+.section1-droite img {
+  height: 400px;
+  width: 500px;
   margin: auto;
+  position: relative;
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 3px solid rgb(91, 91, 91);
 }

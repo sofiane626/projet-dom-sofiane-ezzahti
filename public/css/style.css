@@ -10305,6 +10305,7 @@ header::before {
   height: 100%;
   width: 100%;
   background-image: url("../../../public/img/hero-bg.jpg");
+  background-attachment: fixed;
   filter: brightness(45%);
   position: fixed;
   object-fit: cover;
@@ -10440,6 +10441,22 @@ header::before {
   gap: 20px;
 }
 
+.header-div2-3 button {
+  background-color: transparent;
+  border: 2px solid #cca35c;
+  border-radius: 20px;
+  height: 35px;
+  width: 130px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-div2-3 button:hover {
+  background-color: #cca35c;
+  color: white;
+}
+
 .header-div3-btn button {
   background-color: transparent;
   border: 2px solid #cca35c;
@@ -10496,6 +10513,13 @@ header::before {
     opacity: 0%;
   }
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 #section1 {
   height: 95vh;
   width: 100%;
@@ -10509,8 +10533,8 @@ header::before {
   height: 100%;
   width: 100%;
   background-image: url("../../../public/img/about-bg.jpg");
+  background-attachment: fixed;
   filter: brightness(45%);
-  position: fixed;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10527,21 +10551,30 @@ header::before {
   color: white;
 }
 
-.sectio1-gauche {
+.section1-gauche {
   height: 95%;
   width: 45%;
   margin: auto;
   color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fa-regular {
   color: #cca35c !important;
 }
 
-.sectio1-droite {
-  height: 95%;
-  width: 45%;
+.section1-droite img {
+  height: 400px;
+  width: 500px;
   margin: auto;
+  position: relative;
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 3px solid rgb(91, 91, 91);
 }
 
 /*# sourceMappingURL=style.css.map */

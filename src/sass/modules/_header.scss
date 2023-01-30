@@ -14,6 +14,7 @@ header::before {
   height: 100%;
   width: 100%;
   background-image: url("../../../public/img/hero-bg.jpg");
+  background-attachment: fixed;
   filter: brightness(45%);
   position: fixed;
   object-fit: cover;
@@ -149,6 +150,22 @@ header::before {
   gap: 20px;
 }
 
+.header-div2-3 button {
+  background-color: transparent;
+  border: 2px solid #cca35c;
+  border-radius: 20px;
+  height: 35px;
+  width: 130px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-div2-3 button:hover {
+  background-color: #cca35c;
+  color: white;
+}
+
 .header-div3-btn button {
   background-color: transparent;
   border: 2px solid #cca35c;
@@ -203,4 +220,11 @@ header::before {
     height: 79px;
     opacity: 0%;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
