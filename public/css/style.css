@@ -10884,4 +10884,125 @@ header::before {
   font-size: 25px;
 }
 
+#section3 {
+  height: fit-content;
+  width: 100%;
+  background-color: #191814;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.section3-box {
+  width: 90%;
+  margin: auto;
+}
+
+.section3-bar {
+  display: flex;
+  width: 20%;
+  gap: 10px;
+}
+
+.section3-Bar {
+  height: 10px;
+  width: 100px;
+  border-bottom: 1px solid #cca35c;
+  margin-top: 16px;
+}
+
+.section3-haut h3 {
+  margin: 0;
+  color: #cca35c;
+  font-size: 25px;
+}
+
+.section3-menu {
+  height: 100px;
+  width: 100%;
+}
+
+.section3-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section3-ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.section3-ul li {
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.section3-ul a:hover {
+  color: #cca35c;
+}
+
+.section3-liste {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.section3-liste-gauche {
+  height: fit-content;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.section3-liste-droite {
+  height: fit-content;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.section3-plat {
+  height: 70px;
+  width: 95%;
+  display: flex;
+}
+
+.section3-plat-test {
+  width: 70px;
+}
+
+.section3-plat-test img {
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section3-plat-test1 {
+  width: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.section3-plat-test1 p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.section3-des {
+  font-size: 10px;
+  color: #686868;
+}
+
 /*# sourceMappingURL=style.css.map */

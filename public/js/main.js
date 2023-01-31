@@ -80,3 +80,27 @@ function toggleMenu() {
   });
 }
 toggleMenu();
+
+// --------------------------------------------------------
+
+function filterPlats(category) {
+  const plats = document.querySelectorAll(".section3-plat");
+  for (const plat of plats) {
+    if (category === "All" || plat.classList.contains(category)) {
+      plat.style.display = "flex";
+    } else {
+      plat.style.display = "none";
+    }
+  }
+}
+
+const menuLinks = document.querySelectorAll(".section3-ul a");
+for (const link of menuLinks) {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const category = event.target.innerText;
+    filterPlats(category);
+  });
+}
+
+// --------------------------------------------------------------------------------
