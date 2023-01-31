@@ -3,6 +3,10 @@
   font-family: "noto";
   src: url("../../public/fonts/NotoSans-Regular.ttf");
 }
+@font-face {
+  font-family: "playfair";
+  src: url("../../public/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -11067,13 +11071,14 @@ header::before {
   display: block;
   background-color: #0f0e0c;
   color: white;
-  padding: 14px 10px;
+  padding: 12.7px 10px;
   width: 100%;
   border: none;
   outline: none;
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "playfair";
 }
 
 /* Change background color of buttons on hover */
@@ -11090,7 +11095,7 @@ header::before {
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
+  padding: 0px 15px;
   width: 75%;
   border: none;
   height: 100%;
@@ -11121,6 +11126,14 @@ header::before {
 .section4-card p {
   color: #585858;
   font-size: 13px;
+}
+
+.section4-card h3 {
+  font-family: "playfair";
+}
+
+.italique {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
