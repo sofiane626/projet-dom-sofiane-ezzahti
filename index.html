@@ -15,8 +15,7 @@
           <div class="header-div1-1">
             <i class="fa-solid fa-mobile-screen mr-2"></i
             ><span class="num">+1 5589 55488 55</span>
-            <i class="fa-solid fa-clock"></i>
-            <span id="date"></span>
+            <i class="fa-solid fa-clock"></i><span id="date"></span>
           </div>
           <div class="header-div1-2">
             <p><a href="">En</a> / <a href="">De</a></p>
@@ -59,10 +58,48 @@
             </nav>
           </div>
           <div class="header-div2-3">
-            <button class="connexion">CONNEXION</button>
+            <button id="myBtn" class="connexion">CONNEXION</button>
             <button class="burger">
               <span class="bar"></span>
             </button>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-btn">
+                <button>CONNEXION</button>
+                <button>INSCRIPTION</button>
+              </div>
+              <div class="modal-connexion" style="display: none">
+                <div class="modal1">
+                  <input type="text" placeholder="Pseudo" />
+                </div>
+                <div class="modal1">
+                  <input type="text" placeholder="Mot De Passe" />
+                </div>
+                <div class="modal1">
+                  <button>CONNEXION</button>
+                </div>
+              </div>
+              <div class="modal-inscription" style="display: none">
+                <div class="modal1">
+                  <p>Creer un pseudo :</p>
+                  <input type="text" placeholder="Pseudo" />
+                </div>
+                <div class="modal1">
+                  <p>Adresse Mail :</p>
+                  <input type="email" placeholder="Mail" />
+                </div>
+                <div class="modal1">
+                  <p>Creer un mot de passe :</p>
+                  <input type="text" placeholder="Mot De Passe" />
+                </div>
+                <div class="modal1">
+                  <button>S'INSCRIRE</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

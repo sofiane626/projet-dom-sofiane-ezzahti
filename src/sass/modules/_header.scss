@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "noto";
+  overflow-x: hidden;
 }
 
 header {
@@ -78,6 +79,7 @@ header::before {
 
 .header-div2-1 h2 {
   transition: all 0.3s;
+  font-size: 35px;
 }
 
 .header-div2-1 h2:hover {
@@ -106,6 +108,7 @@ header::before {
   text-decoration: none;
   color: white;
   transition: all 0.3s;
+  font-size: 22px;
 }
 
 .nav-bar a:hover {
@@ -143,8 +146,9 @@ header::before {
   background-color: transparent;
   border: 2px solid #cca35c;
   border-radius: 20px;
-  height: 35px;
-  width: 130px;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
   color: white;
   cursor: pointer;
   transition: all 0.3s;
@@ -159,11 +163,12 @@ header::before {
   background-color: transparent;
   border: 2px solid #cca35c;
   border-radius: 20px;
-  height: 35px;
-  width: 130px;
+  height: 40px;
+  width: 150px;
   color: white;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 17px;
 }
 
 .header-div3-1 button:hover {
@@ -176,18 +181,18 @@ header::before {
 }
 
 .header-div3-1 h1 {
-  font-size: 40px;
+  font-size: 60px;
   margin: 0;
 }
 
 .header-div3-1 p {
-  font-size: 16px;
+  font-size: 26px;
   margin: 0;
 }
 
 .btn-pulse {
   background-color: #cca35c81;
-  height: 80px;
+  height: 100px;
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
@@ -199,6 +204,7 @@ header::before {
 
 .fa-play {
   z-index: 10;
+  font-size: 30px;
 }
 
 .fa-play:hover {
@@ -209,7 +215,7 @@ header::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 80px;
   aspect-ratio: 1/1;
   background-color: #cca35c;
   border-radius: 50%;
@@ -217,7 +223,7 @@ header::before {
 }
 
 .circle-pulse {
-  height: 10px;
+  height: 20px;
   color: #cca35ccf;
   aspect-ratio: 1/1;
   position: absolute;
@@ -229,15 +235,15 @@ header::before {
 
 @keyframes pulse {
   0% {
-    height: 50px;
+    height: 70px;
     opacity: 100%;
   }
   95% {
-    height: 79px;
+    height: 99px;
     opacity: 100%;
   }
   100% {
-    height: 79px;
+    height: 99px;
     opacity: 0%;
   }
 }
@@ -295,9 +301,147 @@ header::before {
   display: none;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 70vh;
+}
+
+.modal-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.modal-btn button {
+  background-color: transparent;
+  border: 1px solid #cca35c;
+  border-radius: 20px;
+  height: 45px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-btn button:hover {
+  background-color: #cca35c;
+}
+
+.modal-connexion {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-connexion input {
+  background-color: transparent;
+  height: 30px;
+  width: 200px;
+  border: white 1px solid;
+}
+
+.modal-connexion button {
+  background-color: transparent;
+  border: 1px solid #cca35c;
+  border-radius: 20px;
+  height: 45px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-inscription button {
+  background-color: transparent;
+  border: 1px solid #cca35c;
+  border-radius: 20px;
+  height: 45px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-inscription {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-inscription input {
+  background-color: transparent;
+  height: 30px;
+  width: 200px;
+  border: white 1px solid;
+}
+
+.modal1 {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767.98px) {
   .navbar {
     background-color: #000;
+  }
+
+  header {
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+  }
+  header h2 {
+    margin: 0;
   }
 
   .header-test {
