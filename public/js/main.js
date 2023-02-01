@@ -153,7 +153,7 @@ for (let i = 0; i < sliders.length; ++i) {
     dots.appendChild(dot);
     dot.addEventListener("click", dotClick.bind(null, i), false);
   }
-
+  
   const allDots = dots.querySelectorAll(".dot");
   allDots[0].classList.add("active-dot");
 
@@ -185,13 +185,13 @@ for (let i = 0; i < sliders.length; ++i) {
 
     prevImg = currImg;
     currImg = nextImg;
-
+    
     currDot = allDots[currImg];
     currDot.classList.add("active-dot");
     prevDot = allDots[prevImg];
     prevDot.classList.remove("active-dot");
   }
-
+  
   /**
    * Decides if animate to left or right and highlights clicked dot
    * @param {number} num - index of clicked dot
