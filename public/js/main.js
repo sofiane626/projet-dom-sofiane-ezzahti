@@ -64,6 +64,8 @@ window.addEventListener("click", function (event) {
   }
 });
 
+// -------------------------------------------------------------------------------------------
+
 function toggleMenu() {
   const navbar = document.querySelector(".navbar");
   const burger = document.querySelector(".burger");
@@ -82,7 +84,7 @@ function toggleMenu() {
 toggleMenu();
 
 // --------------------------------------------------------
-
+// MENU
 function filterPlats(category) {
   const plats = document.querySelectorAll(".section3-plat");
   for (const plat of plats) {
@@ -104,6 +106,7 @@ for (const link of menuLinks) {
 }
 
 // --------------------------------------------------------------------------------
+// SECTION4
 
 function openCity(evt, cityName) {
   // Declare all variables
@@ -127,7 +130,7 @@ function openCity(evt, cityName) {
 }
 
 // -----------------------------------------------------------------------------------
-
+// CAROUSSEL
 const sliders = document.querySelectorAll(".slider");
 // interval between switching images
 // can't be less than your animation duration in css!
@@ -153,7 +156,7 @@ for (let i = 0; i < sliders.length; ++i) {
     dots.appendChild(dot);
     dot.addEventListener("click", dotClick.bind(null, i), false);
   }
-  
+
   const allDots = dots.querySelectorAll(".dot");
   allDots[0].classList.add("active-dot");
 
@@ -185,13 +188,13 @@ for (let i = 0; i < sliders.length; ++i) {
 
     prevImg = currImg;
     currImg = nextImg;
-    
+
     currDot = allDots[currImg];
     currDot.classList.add("active-dot");
     prevDot = allDots[prevImg];
     prevDot.classList.remove("active-dot");
   }
-  
+
   /**
    * Decides if animate to left or right and highlights clicked dot
    * @param {number} num - index of clicked dot
@@ -210,3 +213,49 @@ for (let i = 0; i < sliders.length; ++i) {
 }
 
 // ------------------------------------------------------------------------------------------
+
+let sectionAllBtn = document.querySelectorAll(".section7-btn");
+let translateValue = 0;
+let posI = 0;
+
+function applyColorBtn(i) {
+  for (let index = 0; index < sectionAllBtn.length; index++) {
+    if (index == i) {
+      sectionAllBtn[index].classList.add("bkMain");
+    } else {
+      sectionAllBtn[index].classList.remove("bkMain");
+    }
+  }
+}
+
+for (let index = 0; index < sectionAllBtn.length; index++) {
+  sectionAllBtn[index].addEventListener("click", () => {
+    applyColorBtn(index);
+    posI = index;
+    translateValue = index * -100;
+    console.log("btnCarousell call Value: " + translateValue);
+    let allElem = document.querySelectorAll(".section7-elem");
+    allElem.forEach((elem) => {
+      elem.style.transform = `translateX(${translateValue}%)`;
+      console.log(elem.style);
+    });
+  });
+}
+
+setInterval(() => {
+  if (translateValue <= -400) {
+    translateValue = 0;
+    posI = 0;
+  } else {
+    translateValue -= 100;
+    posI++;
+  }
+  applyColorBtn(posI);
+  let allElem = document.querySelectorAll(".section7-elem");
+  allElem.forEach((elem) => {
+    elem.style.transform = `translateX(${translateValue}%)`;
+    console.log(elem.style);
+  });
+}, 4000);
+
+// -----------------------------------------------------------------------------------------------------
