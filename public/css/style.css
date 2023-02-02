@@ -11348,7 +11348,7 @@ footer {
 }
 
 .section2-box-card p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .section2-haut h3 {
@@ -11599,6 +11599,7 @@ footer {
   cursor: pointer;
   transition: 0.3s;
   font-family: "playfair";
+  font-size: 16px;
 }
 
 /* Change background color of buttons on hover */
@@ -11645,7 +11646,7 @@ footer {
 
 .section4-card p {
   color: #585858;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .section4-card h3 {
@@ -11990,9 +11991,10 @@ footer {
 .section6-input1 input {
   background-color: transparent;
   border: 2px solid rgb(58, 58, 58);
-  height: 28px;
-  width: 340px;
+  height: 48px;
+  width: 380px;
   padding-left: 10px;
+  color: white;
 }
 
 .section6-input2 {
@@ -12008,6 +12010,7 @@ footer {
   width: 100%;
   background-color: transparent;
   border: 2px solid rgb(58, 58, 58);
+  color: white;
 }
 
 .section6-btn {
@@ -12348,6 +12351,7 @@ footer {
   width: 31%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .section9-card img {
@@ -12364,12 +12368,16 @@ footer {
   z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.623);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
   transition: all 0.6s;
+  transform: translateY(100%);
 }
 
-.section9-hover:hover {
+.section9-card:hover .section9-hover {
+  height: 100%;
+  transform: translateY(0);
   opacity: 1;
+  overflow: hidden;
 }
 
 .section9-hover1 {
@@ -12407,6 +12415,10 @@ footer {
   gap: 20px;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.section9-resaux i {
+  font-size: 20px;
 }
 
 .section9-resaux i:hover {

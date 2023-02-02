@@ -57,6 +57,7 @@
   width: 31%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .section9-card img {
@@ -73,12 +74,21 @@
   z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.623);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 212, 255, 0) 100%
+  );
   transition: all 0.6s;
+  transform: translateY(100%);
 }
 
-.section9-hover:hover {
+.section9-card:hover .section9-hover {
+  height: 100%;
+  transform: translateY(0);
   opacity: 1;
+  overflow: hidden;
 }
 
 .section9-hover1 {
@@ -116,6 +126,10 @@
   gap: 20px;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.section9-resaux i {
+  font-size: 20px;
 }
 
 .section9-resaux i:hover {
