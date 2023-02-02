@@ -34,7 +34,7 @@ header::before {
   height: 10%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.591);
-  color: white !important;
+  color: white;
   position: relative;
 }
 
@@ -70,6 +70,17 @@ header::before {
 
 .header-div1-2 {
   margin-right: 40px !important;
+  display: flex;
+  gap: 20px;
+}
+
+#dark {
+  height: 50px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .header-div1-2 a {
@@ -302,7 +313,7 @@ header::before {
 }
 
 /* The Modal (background) */
-.modal {
+.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -431,7 +442,7 @@ header::before {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .navbar {
     background-color: #000;
   }

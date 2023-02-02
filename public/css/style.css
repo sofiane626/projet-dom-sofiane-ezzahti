@@ -10334,7 +10334,7 @@ header::before {
   height: 10%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.591);
-  color: white !important;
+  color: white;
   position: relative;
 }
 
@@ -10370,6 +10370,17 @@ header::before {
 
 .header-div1-2 {
   margin-right: 40px !important;
+  display: flex;
+  gap: 20px;
+}
+
+#dark {
+  height: 50px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .header-div1-2 a {
@@ -10601,7 +10612,7 @@ header::before {
 }
 
 /* The Modal (background) */
-.modal {
+.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -10730,7 +10741,7 @@ header::before {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .navbar {
     background-color: #000;
   }
@@ -10911,10 +10922,14 @@ header::before {
   width: 45%;
   margin: auto;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section1-gauche h3 {
+  font-size: 22px;
 }
 
 .fa-regular {
@@ -10922,8 +10937,8 @@ header::before {
 }
 
 .section1-droite img {
-  height: 400px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
   margin: auto;
   position: relative;
   object-fit: cover;
@@ -10936,7 +10951,7 @@ header::before {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1s all ease;
 }
 
 .reveal.active {
@@ -10944,6 +10959,86 @@ header::before {
   opacity: 1;
 }
 
+#imgAbout {
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+
+.section1-droite img {
+  margin-left: 5%;
+  width: 90%;
+  object-fit: cover;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+#imgAbout:hover {
+  transform: scale(1.03);
+}
+
+#imgAbout::before {
+  position: absolute;
+  left: 55px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  content: "";
+  border-left: 5px solid rgb(205, 164, 94);
+  border-top: 5px solid rgb(205, 164, 94);
+  transition: all 0.5s ease 0s;
+}
+
+#imgAbout::after {
+  position: absolute;
+  right: 55px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: "";
+  border-right: 5px solid rgb(205, 164, 94);
+  border-bottom: 5px solid rgb(205, 164, 94);
+  transition: all 0.5s ease 0s;
+}
+
+#imgAbout:hover::after {
+  right: 45px;
+  bottom: 10px;
+}
+
+#imgAbout:hover::before {
+  left: 45px;
+  top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #section1 {
+    height: 225vh;
+    overflow: hidden;
+  }
+  #section1::before {
+    height: 230%;
+    width: 100%;
+  }
+  .section1-box {
+    height: 100%;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section1-gauche {
+    height: 45%;
+    width: 95%;
+  }
+  .section1-droite {
+    height: 45%;
+    width: 95%;
+  }
+}
 footer {
   height: 50vh;
   width: 100%;

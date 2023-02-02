@@ -13,7 +13,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
+// -----------------------------------------------------------------------
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
@@ -278,28 +278,28 @@ document.getElementById("date").innerHTML = today;
 // modal connection
 
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal3 = document.getElementById("myModal2");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+let btn3 = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
+btn3.onclick = function () {
+  modal3.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-  modal.style.display = "none";
+  modal3.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal3.style.display = "none";
   }
 };
 
@@ -308,7 +308,7 @@ window.onclick = function (event) {
 const connexionBtn = document.querySelector(".modal-btn button:first-child");
 const inscriptionBtn = document.querySelector(".modal-btn button:last-child");
 const modalBBtn = document.querySelector(".modal-btn");
-const modal2 = document.querySelector("#myModal");
+const modal2 = document.querySelector("#myModal2");
 const modalConnexion = document.querySelector(".modal-connexion");
 const modalInscription = document.querySelector(".modal-inscription");
 
@@ -334,4 +334,17 @@ modalInscription.addEventListener("click", function () {
   modalConnexion.style.display = "none";
   modalInscription.style.display = "none";
   modalBBtn.style.display = "flex";
+});
+
+const darkModeBtn = document.querySelector("#dark");
+
+darkModeBtn.addEventListener("click", function () {
+  for (let i = 1; i <= 10; i++) {
+    document.querySelector(`#section${i}`).style.backgroundColor = "white";
+    document.querySelector(`#section${i}`).style.color = "black";
+    document.querySelector(`.header-div2`).style.backgroundColor = "white";
+    document.querySelector(`.header-div2`).style.color = "black";
+    document.querySelector(`.header-div2-2`).style.color = "black";
+    document.querySelector(`.y`).style.color = "black";
+  }
 });
