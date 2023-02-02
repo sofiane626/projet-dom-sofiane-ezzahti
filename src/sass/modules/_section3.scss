@@ -118,3 +118,24 @@
   font-size: 10px;
   color: #686868;
 }
+
+@media screen and (max-width: 768px) {
+  .section3-liste {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section3-liste-droite {
+    height: 48%;
+    width: 90%;
+    margin: auto;
+    margin-left: 100px;
+  }
+
+  .section3-liste-gauche {
+    height: 48%;
+    width: 90%;
+    margin: auto;
+    margin-left: 100px;
+  }
+}
