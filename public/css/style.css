@@ -11903,6 +11903,17 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  #section6 {
+    height: 110vh;
+  }
+  .section6-input1 {
+    gap: 10px;
+  }
+  .section6-input2 {
+    gap: 10px;
+  }
+}
 #section7 {
   background-color: #191814;
   height: 100vh;
