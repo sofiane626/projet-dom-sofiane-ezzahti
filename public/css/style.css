@@ -12123,6 +12123,33 @@ footer {
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 768px) {
+  #section8 {
+    height: 400vh;
+  }
+  .section8-haut {
+    height: 10%;
+  }
+  .section8-bas {
+    gap: 2px;
+  }
+  .section8-photo1 {
+    margin: auto;
+    flex-wrap: wrap;
+    height: 25%;
+    margin: 0;
+  }
+  .section8-photo2 {
+    margin: auto;
+    flex-wrap: wrap;
+    height: 25%;
+  }
+  .section8-card {
+    flex-basis: 50%;
+    height: 50%;
+    margin: auto;
+  }
+}
 #section9 {
   height: 80vh;
   width: 100%;
