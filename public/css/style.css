@@ -10923,6 +10923,46 @@ header::before {
   border: 2px solid #cda45e;
 }
 
+.modal4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.modal-dialog4 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: auto;
+}
+
+.close4 {
+  float: right;
+  font-size: 30px;
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.modal-content4 {
+  background-color: #fff;
+}
+
+.modal-body4 {
+  padding: 20px;
+}
+
+.modal-body4 iframe {
+  height: 500px;
+  width: 100%;
+}
+
 #section1 {
   height: 95vh;
   width: 100%;

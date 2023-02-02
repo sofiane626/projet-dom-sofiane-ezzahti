@@ -16,37 +16,66 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-// Référence aux éléments HTML
-var modalBtn = document.getElementById("modalBtn");
-var modal = document.getElementById("myModal");
-var video = document.getElementById("video");
-var close = document.getElementsByClassName("close")[0];
+// // Référence aux éléments HTML
+// var modalBtn = document.getElementById("modalBtn");
+// var modal = document.getElementById("myModal");
+// var video = document.getElementById("video");
+// var close = document.getElementsByClassName("close")[0];
 
-// Déclencheur pour l'ouverture du modal
-modalBtn.addEventListener("click", function () {
-  modal.style.display = "block";
-});
+// // Déclencheur pour l'ouverture du modal
+// modalBtn.addEventListener("click", function () {
+//   modal.style.display = "block";
+// });
 
-// Déclencheur pour la fermeture du modal
-close.addEventListener("click", function () {
-  modal.style.display = "none";
-  video.contentWindow.postMessage(
-    '{"event":"command","func":"pauseVideo","args":""}',
-    "*"
-  );
-  video.src = "";
-});
+// // Déclencheur pour la fermeture du modal
+// close.addEventListener("click", function () {
+//   modal.style.display = "none";
+//   video.contentWindow.postMessage(
+//     '{"event":"command","func":"pauseVideo","args":""}',
+//     "*"
+//   );
+//   video.src = "";
+// });
 
-// Déclencheur pour fermer le modal en cliquant en dehors de la vidéo
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    video.contentWindow.postMessage(
-      '{"event":"command","func":"pauseVideo","args":""}',
-      "*"
+// // Déclencheur pour fermer le modal en cliquant en dehors de la vidéo
+// window.addEventListener("click", function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//     video.contentWindow.postMessage(
+//       '{"event":"command","func":"pauseVideo","args":""}',
+//       "*"
+//     );
+//     video.src = "";
+//   }
+// });
+
+// Video header
+let header_play = document.getElementsByClassName("btn-pulse")[0];
+
+document.addEventListener("DOMContentLoaded", function () {
+  let videoModal = document.querySelector("#videoModal4");
+  let youtubeVideo = document.querySelector("#youtubeVideo");
+  let close4Btn = document.querySelector(".close4");
+
+  header_play.addEventListener("click", function () {
+    youtubeVideo.setAttribute(
+      "src",
+      "https://www.youtube.com/embed/GtL1huin9EE?autoplay=1"
     );
-    video.src = "";
-  }
+    videoModal.style.display = "block";
+  });
+
+  close4Btn.addEventListener("click", function () {
+    youtubeVideo.setAttribute("src", "");
+    videoModal.style.display = "none";
+  });
+
+  videoModal.addEventListener("click", function (event) {
+    if (event.target === videoModal) {
+      youtubeVideo.setAttribute("src", "");
+      videoModal.style.display = "none";
+    }
+  });
 });
 
 // -------------------------------------------------------------------------------------------
