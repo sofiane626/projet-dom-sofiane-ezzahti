@@ -12274,6 +12274,23 @@ footer {
   color: #cca35c;
 }
 
+@media screen and (max-width: 768px) {
+  #section9 {
+    height: 180vh;
+  }
+  .section9-haut {
+    height: 10%;
+  }
+  .section9-bas {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section9-card {
+    height: 32%;
+    width: 80%;
+  }
+}
 #section10 {
   height: 120vh;
   width: 100%;
