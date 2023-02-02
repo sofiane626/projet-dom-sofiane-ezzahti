@@ -124,3 +124,55 @@
 .italique {
   font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+  #section4 {
+    height: 160vh;
+  }
+
+  .section4-haut {
+    height: 10%;
+    width: 100%;
+  }
+
+  .section4-bas {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .tab {
+    width: 90%;
+    height: 30%;
+  }
+
+  .tabcontent {
+    width: 95%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .section4-card {
+    height: 40%;
+    width: 90%;
+  }
+
+  .section4-card1 {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .section4-card1 img {
+    width: 300px;
+  }
+}
