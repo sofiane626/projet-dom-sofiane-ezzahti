@@ -12031,6 +12031,11 @@ footer {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .section7-row {
+    width: 700%;
+  }
+}
 #section8 {
   height: 100vh;
   width: 100%;

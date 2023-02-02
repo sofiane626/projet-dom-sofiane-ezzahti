@@ -110,3 +110,9 @@
 .section7-span {
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .section7-row {
+    width: 700%;
+  }
+}
