@@ -84,3 +84,19 @@
   color: #cca35c;
   font-size: 25px;
 }
+
+@media screen and (max-width: 768px) {
+  #section2 {
+    height: 160vh;
+  }
+
+  .section2-bas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section2-card {
+    width: 90%;
+    height: 32%;
+  }
+}

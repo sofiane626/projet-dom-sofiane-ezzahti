@@ -10902,8 +10902,6 @@ header::before {
   background-attachment: fixed;
   filter: brightness(45%);
   object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
   position: absolute;
 }
 
@@ -11256,6 +11254,19 @@ footer {
   font-size: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  #section2 {
+    height: 160vh;
+  }
+  .section2-bas {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section2-card {
+    width: 90%;
+    height: 32%;
+  }
+}
 #section3 {
   height: fit-content;
   width: 100%;
