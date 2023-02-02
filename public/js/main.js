@@ -348,3 +348,24 @@ darkModeBtn.addEventListener("click", function () {
     document.querySelector(`.y`).style.color = "black";
   }
 });
+
+// ------------------------------------------------------------------------------------
+
+let mybutton5 = document.getElementById("arrowBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton5.style.display = "block";
+  } else {
+    mybutton5.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

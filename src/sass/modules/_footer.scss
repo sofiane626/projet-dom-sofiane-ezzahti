@@ -127,3 +127,35 @@ footer {
   border-radius: 50px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 150vh;
+  }
+
+  .footer-box {
+    flex-direction: column;
+  }
+
+  .footer-div1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .footer-div2 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .footer-div3 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .footer-fa {
+    justify-content: center;
+  }
+}

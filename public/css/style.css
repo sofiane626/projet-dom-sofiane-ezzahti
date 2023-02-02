@@ -10302,7 +10302,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "noto";
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 header {
@@ -10561,8 +10561,8 @@ header::before {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1000;
+  margin: 0 !important;
 }
 
 /* Style pour le modal */
@@ -10886,6 +10886,32 @@ header::before {
     transition: all 1.7s ease-out;
   }
 }
+#arrowBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#arrowBtn:hover i {
+  background: #cda45e;
+  color: #1a1814;
+}
+
+#arrowBtn i {
+  font-size: 18px;
+  color: #cda45e;
+  border-radius: 50%;
+  padding: 15px;
+  border: 2px solid #cda45e;
+}
+
 #section1 {
   height: 95vh;
   width: 100%;
@@ -11167,6 +11193,32 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    height: 150vh;
+  }
+  .footer-box {
+    flex-direction: column;
+  }
+  .footer-div1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-div2 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-div3 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-fa {
+    justify-content: center;
+  }
+}
 #section2 {
   height: 60vh;
   width: 100%;
@@ -11908,6 +11960,21 @@ footer {
     height: 110vh;
   }
   .section6-input1 {
+    gap: 10px;
+  }
+  .section6-input2 {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #section6 {
+    height: 140vh;
+  }
+  .section6-haut {
+    height: 10%;
+  }
+  .section6-input1 {
+    flex-direction: column;
     gap: 10px;
   }
   .section6-input2 {

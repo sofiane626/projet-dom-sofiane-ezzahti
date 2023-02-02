@@ -112,3 +112,22 @@
     gap: 10px;
   }
 }
+
+@media screen and (max-width: 426px) {
+  #section6 {
+    height: 140vh;
+  }
+
+  .section6-haut {
+    height: 10%;
+  }
+
+  .section6-input1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section6-input2 {
+    gap: 10px;
+  }
+}
