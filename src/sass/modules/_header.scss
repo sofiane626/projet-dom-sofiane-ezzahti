@@ -441,6 +441,19 @@ header::before {
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width: 426px) {
+  .box {
+    margin: 0;
+  }
+
+  .header-div2-1 h2 {
+    font-size: 20px;
+  }
+
+  .header-div3-btn {
+    margin-left: 35px !important;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .navbar {

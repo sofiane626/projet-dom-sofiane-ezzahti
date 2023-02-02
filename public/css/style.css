@@ -10741,6 +10741,17 @@ header::before {
   cursor: pointer;
 }
 
+@media screen and (max-width: 426px) {
+  .box {
+    margin: 0;
+  }
+  .header-div2-1 h2 {
+    font-size: 20px;
+  }
+  .header-div3-btn {
+    margin-left: 35px !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar {
     background-color: #000;
@@ -11392,18 +11403,22 @@ footer {
   height: fit-content;
   width: 48%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 15px;
   transition: all 0.3s;
+  margin-left: 100px;
 }
 
 .section3-liste-droite {
   height: fit-content;
   width: 48%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 15px;
   transition: all 0.3s;
+  margin-left: 100px;
 }
 
 .section3-plat {
@@ -11456,6 +11471,22 @@ footer {
     width: 90%;
     margin: auto;
     margin-left: 100px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .section3-liste {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section3-liste-droite {
+    height: 48%;
+    width: 90%;
+    margin: auto;
+  }
+  .section3-liste-gauche {
+    height: 48%;
+    width: 90%;
+    margin: auto;
   }
 }
 #section4 {
@@ -12082,12 +12113,13 @@ footer {
 }
 
 .section7-btn {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: #ffffff;
   transition: 0.3s ease;
   cursor: pointer;
+  margin-bottom: 100px;
 }
 
 .section7-btn:hover {
@@ -12187,7 +12219,7 @@ footer {
 }
 
 .section8-card img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {

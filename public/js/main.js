@@ -1,18 +1,3 @@
-window.onscroll = function () {
-  myFunction();
-};
-
-let navbar = document.querySelector(".header-div2");
-
-let sticky = navbar.getBoundingClientRect().top;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 // -----------------------------------------------------------------------
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -355,6 +340,7 @@ let mybutton5 = document.getElementById("arrowBtn");
 
 window.onscroll = function () {
   scrollFunction();
+  myFunction();
 };
 
 function scrollFunction() {
@@ -368,4 +354,16 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+let navbar = document.querySelector(".header-div2");
+
+let sticky = navbar.getBoundingClientRect().top;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
