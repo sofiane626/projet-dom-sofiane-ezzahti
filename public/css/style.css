@@ -11593,7 +11593,6 @@ footer {
   filter: brightness(45%);
   object-fit: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
   position: absolute;
 }
 
@@ -11769,6 +11768,40 @@ footer {
   text-decoration-color: #cca35c;
 }
 
+@media screen and (max-width: 768px) {
+  #section5 {
+    height: 150vh;
+  }
+  #section5::before {
+    height: 160%;
+  }
+  .section5-haut {
+    height: 10%;
+  }
+  .slider {
+    height: 1800px;
+    margin-top: 500px;
+  }
+  .section5-test {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .section5-img {
+    height: 48%;
+    width: 90%;
+  }
+  .section5-text {
+    height: 49%;
+    width: 90%;
+    margin-top: 200px;
+  }
+  .section5-img img {
+    height: 800px;
+    width: 800px;
+    object-fit: cover;
+  }
+}
 #section6 {
   height: 70vh;
   width: 100%;
